@@ -1,0 +1,15 @@
+/* Fonts
+-----------------------------------------------------------------------------*/
+
+@font-face {
+    font-family:'Consolas';
+    src: url('../fonts/Consolas.eot');
+	src: url('../fonts/Consolas.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Consolas.woff2') format('woff2'),
+		url('../fonts/Consolas.woff') format('woff'),
+		url('../fonts/Consolas.svg#Consolas') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2083;
+}

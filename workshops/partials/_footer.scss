@@ -1,0 +1,136 @@
+/* Footer
+-----------------------------------------------------------------------------*/
+
+.footer {
+	background: #230cea;
+	min-height: 280px;
+	margin: 0;
+
+	&:after{
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		height: 20px;
+		background: #fff;
+	}
+
+	@media only screen and (max-width : 680px) {
+		&:after{
+			height: 2px;
+		}
+	}
+
+	.container{
+		max-width: 1180px;
+		padding: 10px 20px;
+	}
+
+	.socials{
+		&__item{
+			&:hover{
+				.socials__img{
+					fill: #fff;
+				}
+			}
+		
+			&:hover{
+				text-decoration: none;
+
+				.socials__img{
+					fill: #fff;
+				}
+
+				&:after{
+					content: '';
+					border-color: #fff;
+					background: rgba(0, 0, 0, 0.1);
+				}
+
+				.socials__link{
+					&:after{
+						background: rgba(255, 255, 255, 0.10);
+					}
+				}
+			}
+		}
+		
+		&__img{
+			fill: #fff;
+		}
+	}
+
+	@media only screen and (max-width : 768px) {
+		margin: 0 0 0;
+
+		.container{
+			padding: 10px 30px;
+		}
+	}
+}
+
+.f-menu{
+	padding: 0;
+	margin: 40px 0 34px;
+	list-style: none;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1.43;
+	color: #fff;
+
+	&__item{
+		margin: 20px 0;
+	}
+
+	&__link{
+		text-decoration: none;
+		color: #fff;
+
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+}
+
+
+.f-logo {
+	height: 41px;
+	width: 156px;
+	margin: 24px 0 0;
+	
+	&__link {
+		display: block;
+		height: 100%;
+		background: url(../img/logo-gitnation.svg) no-repeat;
+		transition: none;
+		padding: 0;
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 1.88;
+		color: #023753;
+		text-decoration: none;
+		white-space: nowrap;
+	}
+}
+
+.f-bg-1{
+	position: absolute;
+
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -1px;
+	width: 1440px;
+	height: 382px;
+	background: url(../img/f-bg.svg) center bottom no-repeat;
+
+	@media only screen and (max-width : 980px) {
+		left: auto;
+		right: -634px;
+		transform: translateX(0);
+	}
+
+	@media only screen and (max-width : 680px) {
+		display: none;
+	}
+}

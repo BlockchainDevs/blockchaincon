@@ -1,0 +1,33 @@
+/* Buttons
+-----------------------------------------------------------------------------*/
+
+.basic-btn{
+	text-transform: uppercase;
+	font-size: 12px;
+	display: inline-block;
+	padding: 17px 30px 13px;
+	font-weight: 500;
+	color: #fff;
+	text-decoration: none;
+	letter-spacing: 0.1em;
+	border: 2px solid transparent;
+
+	&.bordered{
+		border: 2px solid #fff;
+		margin: 0 0 0 10px;
+
+		&:hover{
+			background: #3300ff;
+			border-color: #3300ff;
+		}
+	}
+
+	&.blue{
+		background: #3300ff;
+		border-color: #3300ff;
+
+		&:hover{
+			background: #2f00ea;
+		}
+	}
+}

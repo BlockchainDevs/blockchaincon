@@ -1,0 +1,219 @@
+.rule {
+    position: relative;
+
+    margin-top: 80px;
+
+    &__container {
+        max-width: 790px;
+
+        @media only screen and (max-width: 1024px) {
+            padding-right: 40px;
+            padding-left: 40px;
+        }
+
+        @media only screen and (max-width : 480px) {
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+    }
+}
+
+.rule__title {
+    &:after {
+        top: 18px;
+        right: 0;
+
+
+        @media only screen and (max-width: 1024px) {
+            top: 18px;
+            right: -120px;
+            bottom: auto;
+            left: auto;
+        }
+
+
+        @media only screen and (max-width : 768px) {
+            top: auto;
+            bottom: 13px;
+            left: 170px;
+        }
+
+        @media only screen and (max-width : 480px) {
+            left: 150px;
+        }
+    }
+}
+
+.rule__paragraph {
+    width: 500px;
+    margin: 0;
+    margin-bottom: 40px;
+
+    font-size: 16px;
+    line-height: 40px;
+    color: #023753;
+
+    @media only screen and (max-width: 480px) {
+        width: 100%;
+    }
+}
+
+.rule__italic {
+    margin: 0;
+
+    font-size: 18px;
+
+    // font-size: 20px;
+    line-height: 40px;
+    color: #023753;
+    font-style: italic;
+}
+
+
+.rule__grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+
+.rule__block {
+    position: relative;
+
+    width: 370px;
+    min-height: 290px;
+    padding-top: 40px;
+
+    @media only screen and (max-width: 1024px) {
+        width: 330px;
+        min-height: 280px;
+    }
+
+    @media only screen and (max-width : 768px) {
+        position: relative;
+
+        width: 100%;
+        min-height: auto;
+        margin: 0 auto;
+        padding-top: 0;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: 15px;
+        right: -25px;
+        z-index: -1;
+
+        width: 103px;
+        height: 103px;
+
+        background-image: url(../img/dots_dark.svg);
+
+        @media only screen and (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    &--big {
+        width: 770px;
+        height: 500px;
+
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+            height: auto;
+            padding-top: 40px;
+        }
+
+        &:after {
+            top: auto;
+            bottom: -65px;
+
+            @media only screen and (max-width: 1024px) {
+                bottom: -25px;
+            }
+
+            @media only screen and (max-width : 768px) {
+                display: none;
+            }
+        }
+    }
+
+    &--text {
+        @media only screen and (max-width: 1024px) {
+            padding: 20px 0;
+        }
+
+        &:after {
+            display: none;
+        }
+    }
+}
+
+
+.rule__image {
+    width: 100%;
+    height: auto;
+}
+
+
+.rule__note {
+    position: absolute;
+    left: 50%;
+
+    width: 370px;
+    min-height: 40px;
+    margin: 0;
+    margin-top: -13px;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    color: #023753;
+
+    transform: translateX(-50%);
+
+    @media only screen and (max-width: 768px) {
+        position: static;
+
+        width: 100%;
+        margin-top: -13px;
+
+        font-size: 16px;
+
+        transform: translateX(0);
+    }
+
+    &--top {
+        top: 7px;
+
+        margin: 0;
+
+        @media only screen and (max-width: 768px) {
+            position: static;
+
+            margin: 0;
+            margin-bottom: -7px;
+        }
+    }
+}
+
+.rule__text {
+    margin: 0;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 40px;
+    color: #023753;
+
+    @media only screen and (max-width: 1024px) {
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    @media only screen and (max-width : 1024px) {
+        bottom: 45px;
+    }
+}

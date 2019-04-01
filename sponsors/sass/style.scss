@@ -1,0 +1,88 @@
+@import "partials/variables";
+@import "partials/sprite-svg";
+@import "partials/mixins";
+@import "partials/functions";
+@import "partials/normalize";
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	font-family: $font-base;
+}
+
+body {
+	width: 100%;
+	background: #fff;
+	color: #333;
+	font-size: $font-size;
+	line-height: 1.36;
+}
+
+a {
+	color: #0680ba;
+	transition: all linear .1s;
+	text-decoration: none;
+}
+
+.clearfix:after {
+	clear: both;
+	display: block;
+	visibility: hidden;
+	height: 0;
+	content: ".";
+	font-size: 0;
+}
+
+.clearfix { zoom: 1; }
+
+svg:not(:root){
+	overflow: hidden;
+}
+
+.ir {
+	font: 0/0 a;
+	text-shadow: none;
+	color: transparent;
+}
+
+.wrapper {
+	position: relative;
+	overflow: hidden;
+	min-height: 100%;
+	min-width: 300px;
+}
+
+.container {
+	position: relative;
+	max-width: 1338px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+b,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal;
+	/*font-family: $font-base;*/
+}
+
+
+@import "partials/fonts";
+@import "partials/icons";
+@import "partials/buttons";
+@import "partials/forms";
+
+@import "partials/header";
+@import "partials/content";
+@import "partials/footer";
+
+@import "partials/media";
